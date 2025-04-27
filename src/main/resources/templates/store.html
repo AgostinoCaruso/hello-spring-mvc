@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>Sono lo store</h1>
+    <!-- <h1>Sono lo store</h1> -->
+    <h1 th:text="${titolo}"></h1>
+    <h2>Il nome dell'articolo è: </h2>
+    <h2 th:text="${name}"></h2>
+    <h2>Il prezzo è: </h2>
+    <h2 th:text="${price}"></h2>
 </body>
 </html>
